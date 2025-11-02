@@ -1,0 +1,16 @@
+si/StockGrpc$3.class
+si/StockGrpc.class
+si/StockGrpc$StockMethodDescriptorSupplier.class
+si/StockGrpc$StockFileDescriptorSupplier.class
+de/fhaachen/si/gateway/StockService.class
+si/StockGrpc$1.class
+de/fhaachen/si/gateway/GrpcServer.class
+si/StockGrpc$StockBaseDescriptorSupplier.class
+si/StockGrpc$2.class
+si/StockGrpc$StockImplBase.class
+si/StockGrpc$AsyncService.class
+si/StockGrpc$MethodHandlers.class
+si/StockGrpc$StockBlockingStub.class
+si/StockGrpc$StockFutureStub.class
+si/StockGrpc$StockStub.class
+de/fhaachen/si/gateway/StockConfig.class

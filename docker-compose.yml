@@ -1,0 +1,7 @@
+services:
+  grpc-gateway:
+    build: .
+    container_name: grpc-gateway
+    ports:
+      - "9090:9090"
+    restart: unless-stopped

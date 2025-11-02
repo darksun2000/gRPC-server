@@ -1,18 +1,19 @@
 package de.fhaachen.si.gateway;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
+import java.util.ResourceBundle;
 
-@Configuration
-@PropertySource("classpath:stock.properties")
 public class StockConfig {
-    @Value("${erp.endpoint}")
-    private String endpoint;
-    @Value("${erp.username}")
-    private String username;
-    @Value("${erp.password}")
-    private String password;
+
+    private final String endpoint;
+    private final String username;
+    private final String password;
+
+    public StockConfig() {
+        ResourceBundle bundle = ResourceBundle.getBundle("stock");
+        this.endpoint = bundle.getString("erp.endpoint");
+        this.username = bundle.getString("erp.username");
+        this.password = bundle.getString("erp.password");
+    }
 
     public String endpoint() {
         return endpoint;
